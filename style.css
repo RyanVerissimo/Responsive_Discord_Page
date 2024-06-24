@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+
+body {
+    overflow-x: hidden;
+}
+
+h2 {
+    font-family: Open Sans;
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #23272A;
+}
+
+p {
+    text-align: justify;
+    font-size: 1rem;
+    line-height: 21.79px;
+}
+
+/* --------------HEADER------------ */
+
+header {
+    height: auto;
+    max-width: 100%;
+    padding: 70px 20px;
+
+    background-image: url(./images/bg-header.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    color: #fff;
+}
+
+header h1 {
+    font-family: "Luckiest Guy", cursive;
+    font-weight: 400;
+    font-style: normal;
+
+    width: 278px;
+    height: 64px;
+}
+
+header p {
+    margin-top: 20px;
+    max-width: 757px;
+}
+
+header nav ul li {
+    display: flex;
+    flex-direction: column;
+}
+
+header a {
+    display: inline-block;
+    padding: 20px 20px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 28px;
+    margin-top: 24px;
+}
+
+.link-download {
+    background-color: #fff;
+    color: #000;
+}
+
+.link-download:hover {
+    background-color: #ebebeb;
+    color: #000;
+}
+
+.link-discord {
+    background: #23272A;
+    color: #fff;
+}
+
+.link-discord:hover {
+    background: #080808;
+    color: #fff;
+}
+
+/*------------section  ---------*/
+section {
+    max-width: 100%; 
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 27px;
+    align-items: center;
+}
+
+section img {
+    width: 100%; 
+    max-width: 100%; 
+}
+
+section .texts {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+main section:nth-child(even) {
+    background-color: #f6f6f6;
+}
+
+section img {
+    width: auto;
+    max-width: 100%;
+    flex: 1 1 50%;
+}
+
+.texts {
+    flex: 1 1 50%;
+    max-width: 600px; 
+}
+
+/*---------------footer-----*/
+footer {
+    max-width: 100%;
+    background-color: #23272a; 
+}
+
+footer svg {
+    max-width: 100%;
+    width: 100%;
+}
+
+
+@media screen and (min-width: 350px) {
+    header {
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 610px) {
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    header p {
+        font-size: 1.3rem;
+        line-height: 1.8rem;
+        margin-top: 50px;
+    }
+
+    header nav ul {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    main  {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    section {
+        margin: auto;
+        max-width: 1200px;
+        flex-direction: row;
+    }
+
+    section.channels {
+        flex-direction: row-reverse;
+    }
+
+    section.technology {
+        flex-direction: column-reverse;
+        text-align: center;
+        align-items: center;
+        width: 100%;
+    }
+}
+
+
+@media screen and (min-width: 1200px) {
+    header h1 {
+        font-size: 3rem;
+    }
+
+    header p {
+        font-size: 1.5rem;
+        line-height: 1.8rem;
+        margin-top: 50px;
+    }
+
+    .texts h2{
+        font-size: 2.5rem;
+        line-height: 4rem;
+    }
+
+    .texts p {
+        font-size: 1.4rem;
+        line-height: 1.9rem;
+    }
+
+}
